@@ -70,7 +70,7 @@ section.visible {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color:  #4b9183; 
     color: var(--background-color);
 }
 
