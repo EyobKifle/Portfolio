@@ -70,7 +70,7 @@ section.visible {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: #00ffcc;
     color: var(--background-color);
 }
 
@@ -132,6 +132,17 @@ header .container {
     color: var(--primary-color);
 }
 
+/* Specifically target the contact button in the header nav */
+.nav-links .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color); /* Change text color for header contact button */
+}
+
+.nav-links .btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color); /* Change text color for header contact button */
+}
+
 .hamburger {
     display: none;
     background: none;
@@ -168,6 +179,13 @@ header .container {
     margin: 1.5rem 0;
     font-size: 1.1rem;
 }
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allows buttons to stack on small screens */
+    margin-top: 2rem;
+}
+
 
 .hero-image img {
     max-width: 350px;
@@ -220,9 +238,7 @@ header .container {
     margin-bottom: 1rem;
 }
 
-/* --- 3D Skill Badges --- */
 
-/* --- Scrolling Tech Stack Carousel --- */
 .skills h2 {
     text-align: center;
     margin-bottom: 3rem;
@@ -395,6 +411,7 @@ header .container {
 .contact-info p {
     font-size: 1.1rem;
     line-height: 1.7;
+    color: var(--heading-color);
     margin-bottom: 2rem;
 }
 
@@ -634,6 +651,10 @@ footer {
         order: 1;
         margin-bottom: 2rem;
     }
+    .hero-buttons {
+        justify-content: center; /* Center buttons when they stack */
+    }
+
 
     .about-image {
         margin-bottom: 2rem;
@@ -664,7 +685,7 @@ footer {
     animation: slideInUp 0.6s ease-out 0.4s forwards;
     opacity: 0; /* Start as invisible */
 }
-.hero-text .btn {
+.hero-buttons {
     animation: slideInUp 0.6s ease-out 0.6s forwards;
     opacity: 0; /* Start as invisible */
 }

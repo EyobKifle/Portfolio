@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-});
 
 // --- Infinite Scroller Logic ---
 const scrollers = document.querySelectorAll(".scroller");
@@ -71,3 +70,4 @@ function addAnimation() {
         });
     });
 }
+});
